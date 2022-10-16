@@ -4,6 +4,8 @@ public class TryingMethods{
         TryingMethods n = new TryingMethods();
         System.out.println(n.dayOfTheWeek(6));
         n.mestAdmission(50);
+        System.out.println(sumBelowThousand());
+
    }
    public String dayOfTheWeek(int weekDay) {
     switch (weekDay) {
@@ -37,6 +39,15 @@ public class TryingMethods{
         System.out.println("Incubator");
     }
    }
+public static int sumBelowThousand(){
+    int i=0;
+    int sum=0;
+    while (i<5) {
+        sum=i+sum;
+        i= i + 1;
+    }
+    return sum;
+}
 }
 
 
