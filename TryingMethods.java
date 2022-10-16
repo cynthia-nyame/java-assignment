@@ -1,11 +1,16 @@
 // This class contains my practice on java methods
 public class TryingMethods{
    public static void main(String[] args) {
+
         TryingMethods n = new TryingMethods();
+
         System.out.println(n.dayOfTheWeek(6));
+
         n.mestAdmission(50);
+        
         System.out.println(sumBelowThousand());
 
+        sumEvenNumbers();
    }
    public String dayOfTheWeek(int weekDay) {
     switch (weekDay) {
@@ -39,15 +44,25 @@ public class TryingMethods{
         System.out.println("Incubator");
     }
    }
-public static int sumBelowThousand(){
-    int i=0;
-    int sum=0;
-    while (i<5) {
-        sum=i+sum;
-        i= i + 1;
+    public static int sumBelowThousand(){
+        int i=0;
+        int sum=0;
+        while (i<1000) {
+            sum=i+sum;
+            i= i + 1;
+        }
+        return sum;
     }
-    return sum;
-}
+
+    public static void sumEvenNumbers() {
+      int sum=0;
+      for(int i=12; i<103; i++){
+        if (i%2==0){
+            sum=i+sum;
+        }  
+      } 
+      System.out.println(sum);
+    }
 }
 
 
