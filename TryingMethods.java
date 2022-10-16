@@ -3,6 +3,7 @@ public class TryingMethods{
    public static void main(String[] args) {
         TryingMethods n = new TryingMethods();
         System.out.println(n.dayOfTheWeek(6));
+        n.mestAdmission(50);
    }
    public String dayOfTheWeek(int weekDay) {
     switch (weekDay) {
@@ -24,7 +25,21 @@ public class TryingMethods{
             return "Not Available";
     }
    }
+
+   public void mestAdmission(int score) {
+    if (score < 40){
+        System.out.println("Failed");
+    }
+    else if (score <60){
+        System.out.println("EIT");
+    }
+    else {
+        System.out.println("Incubator");
+    }
+   }
 }
+
+
 
 
     
